@@ -1,0 +1,78 @@
+@use '../../variables/colors';
+
+.body {
+  width: 100%;
+  gap: 30px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid colors.$card-color;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.title__input {
+  width: 95%;
+  font-family: Source Sans Pro, sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: left;
+  &:focus {
+    outline: none;
+  }
+}
+
+.date__input:focus {
+  outline: none;
+}
+
+.title__button {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: #242424;
+  border: 1px solid colors.$card-color;
+}
+
+.date {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid colors.$card-color;
+  padding-bottom: 15px;
+}
+
+.date__text {
+  color: colors.$text-color;
+  font-family: Source Sans Pro, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  width: 100px;
+  margin-left: 16px;
+  margin-right: 8px;
+}
+
+.form__btn {
+  max-width: 135px;
+}
+
+.text__input {
+  border: none;
+  border-bottom: 1px solid colors.$card-color;
+  background: #242424;
+  &:focus {
+    outline: none;
+  }
+}
+
+.invalid {
+  border-bottom: 1px solid red;
+}
